@@ -29,12 +29,19 @@ Anchors are essential in regex for specifying the position of a match within the
 
 ### Quantifiers
 
+Quantifiers specify how many times the preceding element should appear. In our regex, + is a quantifier that indicates that the preceding character class or group should appear one or more times. This allows for usernames and domain names to have multiple characters.
+
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+
 ### Grouping Constructs
 
 ### Bracket Expressions
 
 ### Character Classes
 
+Character classes define a set of characters that can match a single character position. In our regex, [a-z0-9_\.-] matches any lowercase letter, digit, underscore, hyphen, or period. Similarly, [\da-z\.-] matches a digit, lowercase letter, hyphen, or period. These character classes ensure that the username and domain name parts of the email address are composed of valid characters.
+
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
 
 ### The OR Operator
 
