@@ -103,4 +103,10 @@ Remember, character escapes can vary depending on the programming language or to
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Jacob McKitrick - https://github.com/MCKIT77/regex-tutorial
+I'm a driven web development student deeply engrossed in the world of coding. With a thirst for knowledge and a knack for problem-solving, I find myself captivated by the intricacies of programming languages and their applications. Eager to unravel the digital realm's mysteries, i spend my time building and refining web projects. My commitment to sharing insights and making coding accessible shines through my tutorials. You're invited to join my coding journey on GitHub and explore his portfolio of projects.
+
+
+
+
+
