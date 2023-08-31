@@ -53,7 +53,13 @@ Character classes define a set of characters that can match a single character p
 
 ### The OR Operator
 
+The OR operator (|) allows specifying multiple alternatives for matching. However, it is not used in this regex.
+
 ### Flags
+
+Flags are used to modify the behavior of regex matching. In this regex, there are no flags used.
+
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
 
 ### Character Escapes
 
