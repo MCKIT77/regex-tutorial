@@ -1,10 +1,12 @@
-# Title (replace with your title)
+# Tutorial: Demystifying the Email Matching Regex
 
-Introductory paragraph (replace this with your text)
+As a web development student, understanding regular expressions (regex) is essential for effective text pattern matching. In this tutorial, we will delve into the intricacies of a specific regex that is used to validate email addresses. Regular expressions can appear cryptic at first, but by breaking down each component, we'll gain a clearer understanding of their power.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+In this tutorial, we will explore the following regex used for matching email addresses:
+
+regex: /^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/
 
 ## Table of Contents
 
@@ -21,6 +23,10 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Anchors
 
+Anchors are essential in regex for specifying the position of a match within the string. In our email regex, the ^ at the beginning and $ at the end indicate that the match should start at the beginning of the string and end at the end of the string. This ensures that we are matching the entire email address.
+
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+
 ### Quantifiers
 
 ### Grouping Constructs
@@ -28,6 +34,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ### Bracket Expressions
 
 ### Character Classes
+
 
 ### The OR Operator
 
