@@ -35,6 +35,14 @@ Quantifiers specify how many times the preceding element should appear. In our r
 
 ### Grouping Constructs
 
+Parentheses are used to create groups in regex. In our regex, we have three groups:
+
+([a-z0-9_\.-]+): This captures the username part of the email.
+([\da-z\.-]+): This captures the domain name part of the email.
+([a-z\.]{2,6}): This captures the top-level domain (TLD) of the email.
+
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+
 ### Bracket Expressions
 
 ### Character Classes
