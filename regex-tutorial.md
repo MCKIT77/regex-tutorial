@@ -45,6 +45,14 @@ Parentheses are used to create groups in regex. In our regex, we have three grou
 
 ### Bracket Expressions
 
+Bracket expressions allow specifying a set of characters that can match a single character position. In our regex:
+
+[a-z0-9_\.-] matches any lowercase letter, digit, underscore, hyphen, or period.
+[\da-z\.-] matches a digit, lowercase letter, hyphen, or period.
+These character classes ensure that the username and domain name parts of the email address are composed of valid characters.
+
+^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
+
 ### Character Classes
 
 Character classes define a set of characters that can match a single character position. In our regex, [a-z0-9_\.-] matches any lowercase letter, digit, underscore, hyphen, or period. Similarly, [\da-z\.-] matches a digit, lowercase letter, hyphen, or period. These character classes ensure that the username and domain name parts of the email address are composed of valid characters.
@@ -61,7 +69,37 @@ Flags are used to modify the behavior of regex matching. In this regex, there ar
 
 ^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$
 
+Some Flag examples : 
+Case-Insensitive Flag (i): This flag allows the regex to match characters regardless of their case.
+
+Example: /regex/i will match both "Regex" and "regex".
+
+Global Flag (g): This flag allows the regex to match all occurrences in the input string, not just the first one.
+
+Example: /pattern/g will match all occurrences of "pattern" in the input.
+
 ### Character Escapes
+
+Character escapes are used to match specific characters that have special meanings in regex. They are preceded by a backslash (\). Here are some common character escapes:
+
+Dot (\.): In regular expressions, a dot (.) matches any character except a newline. To match a literal dot, you need to escape it.
+Example: /example\.com/ will match "example.com" but not "exampleXcom".
+
+Backslash (\\): Since the backslash is used as an escape character in regular expressions, you need to escape it itself to match a literal backslash.
+Example: /\\d+/ will match sequences of digits, like "123".
+
+Newline (\n): Represents a newline character.
+Example: /Hello\nWorld/ will match "Hello" followed by a newline and then "World".
+
+Tab (\t): Represents a tab character.
+Example: /Name:\tJohn/ will match "Name:" followed by a tab and then "John".
+
+Word Boundary (\b): Matches a position where a word starts or ends.
+Example: /\bword\b/ will match the standalone word "word" in a sentence.
+
+Remember, character escapes can vary depending on the programming language or tool you're using, so be sure to consult the documentation for the specific environment you're working in.
+
+
 
 ## Author
 
