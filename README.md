@@ -7,6 +7,7 @@ This is a tutorial .md document that goes in to detail breaking down the regex.
 - [License](#license)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Sources](#sources)
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
